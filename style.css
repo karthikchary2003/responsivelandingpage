@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:poppins;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+}
+#left{
+    width: 40%;
+    height: 100%;
+    position: relative;
+
+}
+#right{
+    height: 100%;
+    width: 60%;
+    background-color: aquamarine;
+
+}
+
+#right-top{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    background-color: aqua;
+}
+#right-top-left{
+    width: 55%;
+    height: 100%;
+    background-color: cornflowerblue;
+    background-image: url(https://images.unsplash.com/photo-1580052614034-c55d20bfee3b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b3JhbmdlfGVufDB8fDB8fHww);
+    background-position: right;
+    background-size: cover;
+    
+}
+#right-top-right{
+    width: 55%;
+    height: 100%;
+    background-color: rgb(113, 113, 113);
+    background-image: url(https://images.unsplash.com/photo-1442528010304-834a5d4f3925?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHllbGxvd3xlbnwwfHwwfHx8MA%3D%3D);
+    background-position: right;
+    background-size: cover;
+}
+
+#right-bottom{
+    height: 50%;
+    width: 100%;
+    background-color: rgb(177, 244, 21);
+    background-image: url(https://images.unsplash.com/photo-1484689228555-fd6bc1b28b7e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHllbGxvd3xlbnwwfHwwfHx8MA%3D%3D);
+    background-position: right;
+    background-size: cover;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+}
+#left-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#right-nav a{
+    margin-right:20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#right-nav i{
+    color: rgb(84, 151, 252);
+}
+
+#left #textcenter{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+#left #textcenter h1{
+    font-size: 70px;
+    font-weight: 800;
+}
+#left #textcenter p{
+    opacity: 0.6;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#left #textcenter a{
+    text-decoration: none;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid grey;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width:746px) {
+    #main{
+        flex-direction: column;
+    }
+    #main #left{
+        width: 100%;
+    }
+    #left #textcenter{
+        width: 75%;
+    }
+    #left #textcenter p{
+        width: 100%;
+    }
+    #main #right{
+        width: 100%;
+    }
+}
+
+
